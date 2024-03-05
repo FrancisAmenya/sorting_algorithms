@@ -16,7 +16,7 @@ void swap_my_ints(int *na, int *nb)
 
 /**
  * bubble_sort - Sort an array sorted forward(ascending).
- * @arrayInts: Int array sorted.
+ * @array: Int array sorted.
  * @size: The size.
  *
  * Description: Prints the array after each swap.
