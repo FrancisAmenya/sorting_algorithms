@@ -21,12 +21,12 @@ void swap_my_ints(int *na, int *nb)
  *
  * Description: Prints the array after each swap.
  */
-void bubble_sort(int *arrayInts, size_t size)
+void bubble_sort(int *array, size_t size)
 {
 	size_t i, arraylen = size;
 	bool bubbly = false;
 
-	if (arrayInts == NULL || size < 2)
+	if (array == NULL || size < 2)
 		return;
 
 	while (bubbly == false)
@@ -34,10 +34,10 @@ void bubble_sort(int *arrayInts, size_t size)
 		bubbly = true;
 		for (i = 0; i < arraylen - 1; i++)
 		{
-			if (arrayInts[i] > arrayInts[i + 1])
+			if (array[i] > array[i + 1])
 			{
-				swap_my_ints(arrayInts + i, arrayInts + i + 1);
-				print_array(arrayInts, size);
+				swap_my_ints(array + i, array + i + 1);
+				print_array(array, size);
 				bubbly = false;
 			}
 		}
